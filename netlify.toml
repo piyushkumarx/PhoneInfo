@@ -1,4 +1,6 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Basic-Auth = "piyush:piyushbhaiop"
+    Basic-Auth = "piyush piyushbhaiop"
+    WWW-Authenticate = 'Basic realm="Restricted Area"'
+
