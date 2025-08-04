@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <title>PhoneCheck - Phone Number Lookup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <!-- HEADER -->
+    <header class="flex justify-between items-center px-6 py-4 bg-slate-900 bg-opacity-50 shadow-md curve">
+        <div class="inline-flex items-center space-x-2 text-purple-500 font-semibold text-lg select-none"
+            aria-label="PhoneCheck Logo">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 5a2 2 0 012-2h3.28a2 2 0 011.964 1.518L11 8h2l1.776-3.482A2 2 0 0116.72 3H20a2 2 0 012 2v13a2 2 0 01-2 2h-3.28a2 2 0 01-1.964-1.518L13 16H9l-1.776 3.482A2 2 0 015.28 21H3a2 2 0 01-2-2V5z" />
+            </svg>
+            <span>PhoneCheck</span>
+        </div>
+        <button id="themeToggle" aria-label="Toggle dark/light mode"
+            class="p-2 rounded-md text-slate-400 hover:text-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            title="Toggle Dark/Light Mode">
+            <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+            <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 3v1m0 16v1m8.66-12.66l-.7.7M5.35 17.65l-.7.7m12.02-12.02a8 8 0 00-11.31 11.31 8 8 0 0011.3-11.31zM12 7a5 5 0 010 10 5 5 0 010-10z" />
+            </svg>
+        </button>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main
+        class="flex-grow flex flex-col items-center text-center px-4 sm:px-6 lg:px-8 py-10 max-w-4xl mx-auto theme-transition">
+
+        <span
+            class="inline-flex items-center bg-slate-800 bg-opacity-50 rounded-full py-1 px-3 text-sm mb-5 select-none"
+            aria-label="Trusted by thousands worldwide">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-yellow-400" fill="currentColor"
+                viewBox="0 0 20 20" aria-hidden="true">
+                <path
+                    d="M9.049 2.927C9.324 2.034 10.676 2.034 10.951 2.927l1.286 3.996a1 1 0 00.95.69h4.202c.969 0 1.371 1.24.588 1.81l-3.4 2.47a1 1 0 00-.364 1.118l1.287 3.995c.275.893-.755 1.637-1.54 1.118l-3.4-2.47a1 1 0 00-1.176 0l-3.4 2.47c-.784.52-1.814-.225-1.54-1.118l1.286-3.995a1 1 0 00-.364-1.118l-3.4-2.47c-.783-.57-.38-1.81.588-1.81h4.202a1 1 0 00.95-.69l1.286-3.996z" />
+            </svg>
+            Trusted by Piyush
+        </span>
+
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-3">
+            Phone Number <br />
+            <span class="text-purple-600 dark:text-purple-500">Lookup Made Easy</span>
+        </h1>
+        <p class="text-gray-300 max-w-xl mb-8 sm:text-lg sm:leading-relaxed mainpara">
+            Discover everything you need to know about any mobile number in seconds. Our smart tool delivers instant and
+            accurate details like carrier, location, and line type — all in real time. No delays, no clutter — just
+            quick and reliable info at your fingertips.
+        </p>
+
+        <div class="highlight" role="" aria-label="">
+            <span class="container">✔ Free to Use</span>
+
+            <span class="container">✔ 100% Private</span>
+            <span class="container">✔ Instant Results</span>
+        </div>
+
+
+    
+
+
+
+        <!-- FORM CARD -->
+        <section aria-labelledby="phoneCheckTitle"
+            class="bg-slate-900 bg-opacity-60 rounded-xl p-8 max-w-xl w-full shadow-lg backdrop-blur-lg theme-transition seaction_one">
+            <div class="flex flex-col items-center gap-4 mb-6">
+                <div aria-hidden="true"
+                    class="rounded-xl w-16 h-16 bg-gradient-to-tr from-purple-600 to-blue-500 flex items-center justify-center shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-white" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 5a2 2 0 012-2h3.28a2 2 0 011.964 1.518L11 8h2l1.776-3.482A2 2 0 0116.72 3H20a2 2 0 012 2v13a2 2 0 01-2 2h-3.28a2 2 0 01-1.964-1.518L13 16H9l-1.776 3.482A2 2 0 015.28 21H3a2 2 0 01-2-2V5z" />
+                    </svg>
+                </div>
+                <h2 id="phoneCheckTitle" class="font-semibold text-white text-xl">Phone Number Lookup</h2>
+                <p class="text-gray-400 text-sm max-w-xs">
+                    Enter any phone number to get instant carrier and location details
+                </p>
+            </div>
+
+            <form id="lookupForm" class="flex flex-col gap-5" aria-describedby="submitHint" novalidate>
+                <div class="relative">
+                    <input id="phoneInput" name="phone" type="tel" pattern="^\+?[\d\s\-()]{7,}$"
+                        placeholder="+919645745440" autocomplete="tel" required aria-required="true"
+                        aria-label="Enter phone number"
+                        class="w-full rounded-lg bg-slate-800 border border-slate-700 text-white py-3 px-4 pr-12 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition duration-200" />
+                    <span class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-slate-400"
+                        aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 10h11M3 14h11M9 16h1m6 1a1 1 0 001-1v-3a1 1 0 00-1-1h-9a1 1 0 00-1 1v3a1 1 0 001 1h14z" />
+                        </svg>
+                    </span>
+                </div>
+
+                <button id="btn" type="button"
+                    class="w-full py-3 rounded-lg text-white font-semibold bg-gradient-to-r from-blue-600 to-purple-600 hover:from-purple-700 hover:to-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 flex justify-center items-center gap-2 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 12l-9-9m0 0l-9 9m9-9v18" />
+                    </svg>
+                    Check Number
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <section>
+        <!-- From Uiverse.io by louloudev59 --> 
+<div class="terminal glass">
+  <div class="terminal_toolbar">
+    <div class="butt">
+      <button class="btn btn-red"></button>
+      <button class="btn btn-yellow"></button>
+      <button class="btn btn-green"></button>
+    </div>
+    <p class="user">Piyush@admin: ~</p>
+    <div class="add_tab">+</div>
+  </div>
+  <div class="terminal_body">
+    <div class="terminal_promt">
+      <span class="terminal_user">Piyush@admin:</span>
+      <span class="terminal_location">~</span>
+      <span class="terminal_bling">$ welcome to Velvier_HackZone</span>
+    </div>
+  </div>
+    <br>
+    <p id="result"></p>
+</div>
+
+    </section>
+
+
+    <section class="card_section">
+        <h2>Why Choose PhoneCheck?</h2>
+        <p class="outer">Experience the fastest and most reliable phone number lookup service with advanced features</p>
+        <div class="cards_Div">
+            <div class="card">
+                <div class="color"><i class="fa-solid fa-bolt fa-lg" style="color: #ffffff;"></i></div>
+                <h5>Lightning Fast</h5>
+                <p>Get instant results with our optimized lookup engine</p>
+            </div>
+
+
+            <div class="card">
+                <div class="color"><i class="fa-solid fa-shield-halved fa-lg" style="color: #ffffff;"></i></div>
+                <h5>Secure & Private</h5>
+                <p>Your searches are private and not stored on our servers</p>
+            </div>
+            <div class="card">
+                <div class="color"><i class="fa-solid fa-earth-asia fa-lg" style="color: #ffffff;"></i></div>
+                <h5>Global Coverage</h5>
+                <p>Support for phone numbers all over the India</p>
+            </div>
+            <div class="card">
+                <div class="color"><i class="fa-solid fa-mobile-screen fa-lg" style="color: #ffffff;"></i></div>
+                <h5>Mobile Friendly</h5>
+                <p>Perfect experience on desktop, tablet, and mobile devices</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <div class="inline-flex items-center space-x-2 text-purple-500 font-semibold text-lg select-none iconofphone" aria-label="PhoneCheck Logo">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a2 2 0 011.964 1.518L11 8h2l1.776-3.482A2 2 0 0116.72 3H20a2 2 0 012 2v13a2 2 0 01-2 2h-3.28a2 2 0 01-1.964-1.518L13 16H9l-1.776 3.482A2 2 0 015.28 21H3a2 2 0 01-2-2V5z"></path>
+            </svg>
+            <span>PhoneCheck</span>
+        </div>
+        <p>The most reliable phone number lookup service. Get instant carrier, location, and line type information for any phone number worldwide.</p>
+        <div>
+            <a href="https://www.instagram.com/piyush.kumarx/"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+            <a href="https://github.com/piyushkumarx"><i class="fa-brands fa-github fa-lg" style="color: #ffffff;"></i></a>
+            <a href="https://t.me/Hackerpiyushkumar"><i class="fa-brands fa-telegram fa-lg" style="color: #ffffff;"></i></a>
+        </div>
+
+        <hr class="breakerline">
+
+
+        <div class="icon_footer">
+        <span>© 2024 PhoneCheck. All rights reserved.</span>
+        <span>Made with ❤️ or maybe too much coffee. </span>
+        </div>
+        
+    </section>
+
+    <!-- footer hai ye  -->
+    <footer
+
+
+        class="fixed bottom-6 right-6 bg-white bg-opacity-90 dark:bg-slate-800 dark:bg-opacity-90 rounded-full px-4 py-2 shadow-lg select-none"
+        aria-label="Designed by Readdy">
+        <a href="https://www.instagram.com/piyush.kumarx/" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-1 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-500 transition-colors">
+            Designed by
+            <img id="hacking_img" src="hacking.png" alt="hacker_img">
+        </a>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
