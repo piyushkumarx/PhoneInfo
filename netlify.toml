@@ -1,6 +1,6 @@
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Basic-Auth = "piyush piyushbhaiop"
-    WWW-Authenticate = 'Basic realm="Restricted Area"'
-
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true
+  headers = {X-Require-Auth = "true"}
