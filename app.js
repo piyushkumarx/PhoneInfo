@@ -75,7 +75,7 @@ btn.addEventListener("click", () => {
 
   if (!isNaN(newvalue) && typeof newvalue === "number") {
     result.innerText = "🌀 Data nikal raha hoon bhai ruk ja...";
-    let url = `https://glonova.in/ia/kak.php/?num=${newvalue}`;
+    let url = `https://glonova.in/Iwowoo3o.php/?num=${newvalue}`;
 
     async function data() {
       try {
