@@ -76,7 +76,7 @@ let newvalue = Number(inpt.value);
 if (!isNaN(newvalue) && typeof newvalue === "number") {
   result.innerText = "🌀 Data nikal raha hoon bhai ruk ja...";
   
-  let url = `https://api.allorigins.win/raw?url=${encodeURIComponent(`https://glonova.in/Iwowoo3o.php/?num=${newvalue}`)}`;
+  let url = `https://api.allorigins.win/raw?url=${encodeURIComponent(`https://glonova.in/Ddsdddddddee.php/?num=${newvalue}`)}`;
 
   async function data() {
     try {
