@@ -76,7 +76,7 @@ let newvalue = Number(inpt.value);
 if (!isNaN(newvalue) && typeof newvalue === "number") {
   result.innerText = "🌀 Data nikal raha hoon bhai ruk ja...";
   
-  let url = `https://api.allorigins.win/raw?url=${encodeURIComponent(`https://private-osint.drsudo.workers.dev/?key=luffy&number=${newvalue}`)}`;
+  let url = `https://api.allorigins.win/raw?url=${encodeURIComponent(`https://osint-lime.vercel.app/api/hello?key=FUCKDEMO&type=number&term=${newvalue}`)}`;
 
   async function data() {
     try {
