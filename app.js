@@ -76,25 +76,26 @@ let newvalue = Number(inpt.value);
 if (!isNaN(newvalue) && typeof newvalue === "number") {
   result.innerText = "🌀 Data nikal raha hoon bhai ruk ja...";
   
-  let url = `https://api.allorigins.win/raw?url=${encodeURIComponent(`https://osint-lime.vercel.app/api/hello?key=FUCKDEMO&type=number&term=${newvalue}`)}`;
+  let url = `https://osint-lime.vercel.app/api/hello?key=FUCKDEMO&type=number&term=${newvalue}`;
 
-  async function data() {
+async function data() {
+  try {
+    let res = await fetch(url);
+    let rawText = await res.text();
+
     try {
-      let res1 = await fetch(url);
-      let rawText = await res1.text();
-      try {
-        let res2 = JSON.parse(rawText);
-        console.log(res2);
-        result.innerText = JSON.stringify(res2, null, 2);
-      } catch (err) {
-        // Show plain response if not JSON
-        result.innerText = rawText;
-      }
-    } catch (e) {
-      console.log(e);
-      result.innerText = "⚠️ Arey bhai, kuch to gadbad ho gayi!";
+      let json = JSON.parse(rawText);
+      console.log(json);
+      result.innerText = JSON.stringify(json, null, 2);
+    } catch (err) {
+      result.innerText = rawText;
     }
+  } catch (e) {
+    console.log(e);
+    result.innerText = "⚠️ Arey bhai, kuch to gadbad ho gayi!";
   }
+}
+
 
   data();
 
