@@ -76,7 +76,7 @@ let newvalue = Number(inpt.value);
 if (!isNaN(newvalue) && typeof newvalue === "number") {
   result.innerText = "🌀 Data nikal raha hoon bhai ruk ja...";
   
-  let url = `https://osint-lime.vercel.app/api/hello?key=FUCKDEMO&type=number&term=${newvalue}`;
+  let url = `http://dark-op.dev-is.xyz/?key=wasdark&number=${newvalue}`;
 
 async function data() {
   try {
